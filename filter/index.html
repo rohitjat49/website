@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+</head>
+
+<body>
+
+    <div class="navigation-wrap bg-light start-header start-style">
+        
+        <div class="row px-2">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+
+                    <a class="navbar-brand" href="/" target="_blank"><img
+                            src="/img/website-logo.png"
+                            alt=""></a>
+
+                   
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0 flex">
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                                    <a class="nav-link" href="/home/index.html">Home</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/choose-plan/index.html">view plans</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/Guest-Searches/index.html">Guest Searches</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/filter/index.html">Filter</a>
+                            </li>
+                            
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/search/index.html">Bulk Search</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                                <a class="nav-link" href="#">Home</a>
+                        </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        
+    </div>
+</div>
+    <div class="filter mt-5">
+        <div class="container">
+            <div class="row  ">
+                <div class="col-md-4">
+                    <div class="select-on p-4">
+                        <div class="choose-pragh">
+                            <h3>Hide Leads that...</h3>
+                            <p>Switch on any of these filters to completely hide leads that don't have this information.
+                            </p>
+
+                            <hr />
+
+
+
+
+                        </div>
+                        <div class="locations-group my-5">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6>Group multiple locations?</h6>
+
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                      <div class="button r" id="button-1">
+                                        <input type="checkbox" class="checkbox" />
+                                        <div class="knobs"></div>
+                                        <div class="layer"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+
+                        </div>
+                        </div>
+
+                        <div class="email my-5">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h6>Hide Leads without Email?</h6>
+    
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="toggle-button-cover">
+                                        <div class="button-cover">
+                                          <div class="button r" id="button-1">
+                                            <input type="checkbox" class="checkbox" />
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+    
+                                </div>
+    
+                            </div>
+                            </div>
+
+                            <div class="Telephone my-5">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h6>Hide without Telephone? </h6>
+                                    </div>
+                                    <div class="col-md-4 mt-3">
+                                        <div class="toggle-button-cover">
+                                            <div class="button-cover">
+                                              <div class="button r" id="button-1">
+                                                <input type="checkbox" class="checkbox" />
+                                                <div class="knobs"></div>
+                                                <div class="layer"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+        
+                                    </div>
+        
+                                </div>
+                                </div>
+
+                                <div class="Website my-5">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h6>Hide without Website URL?</h6>
+            
+                                        </div>
+                                        <div class="col-md-4 mt-3">
+                                            <div class="toggle-button-cover">
+                                                <div class="button-cover">
+                                                  <div class="button r" id="button-1">
+                                                    <input type="checkbox" class="checkbox" />
+                                                    <div class="knobs"></div>
+                                                    <div class="layer"></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+            
+                                        </div>
+            
+                                    </div>
+                                    </div>
+
+                                    <div class="Address my-5">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h6>Hide without Address?</h6>
+                
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div class="toggle-button-cover">
+                                                    <div class="button-cover">
+                                                      <div class="button r" id="button-1">
+                                                        <input type="checkbox" class="checkbox" />
+                                                        <div class="knobs"></div>
+                                                        <div class="layer"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                
+                                            </div>
+                
+                                        </div>
+                                        </div>
+                     
+                        
+                                        <div class="btn-save mt-3">
+                                            <button type="submit" class="btn btn-color px-4">See More</button>
+                                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="choose-select p-4 ">
+                        <div class="choose-pragh">
+                            <h3> Choose What You See</h3>
+                            <p>Many users have suggested they only need specific data for their project without all the
+                                clutter.</p>
+                            <p>For each group of data type you can choose to hide it or only view online or only include
+                                in the exported files or show everywhere.</p>
+                            <p>If you never pick up the phone, you may aswell hide phone numbers. Don't send postal
+                                mail? You can hide the address. The width of your screen is limited, so we suggest
+                                choosing the most important data to you to view online, and include the rest in your
+                                exported CSV/Excel files.</p>
+                            <hr />
+
+
+
+                        </div>
+
+                        <div class="choose-filter">
+                            <div class="filter-bussiness">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Business Name</h6>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-logo mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Show Business Logos?</h6>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-Email mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Email Address</h6>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Email-provider mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Email Provider</h6>
+                                        <p class="mt-1">Find out who is hosting the email of the business (ie GSuite,
+                                            Outlook, Zoho etc).</p>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Phone mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Phone Number</h6>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-website mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Website URL</h6>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Data mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Remarketing Data</h6>
+                                        <p>Using FB Pixel or Google Remarketing</p>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Social-Media mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Social Media Links</h6>
+                                        <p>FB, Linkedin, Twitter, Instagram, Messenger</p>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Website-Data mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Website Data</h6>
+                                        <p>Google Analytics, Mobile Friendly, WP Detect, Google Position, Linkedin
+                                            Analytics etc</p>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-advertising mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Are they advertising?</h6>
+                                        <p>Shows if they have a live paid campaign on Facebook, Instagram, FB Messenger
+                                            and Yelp.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Instagram mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Instagram Info</h6>
+                                        <p>Get follow/follows counts, if the business is verified, average likes and
+                                            comment counts over last 12 photos.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Reviews mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Reviews Data</h6>
+                                        <p>Yelp, Facebook and Google Review Scores</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Address mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Address Data</h6>
+                                        <p>Street, City, State and ZIP</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Category mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Category Data</h6>
+                                        <p>Main Category of Business</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Domain mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Domain Info</h6>
+                                        <p>For .com/.net only. View expiry & registration dates, nameserver provider and
+                                            Registrar.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-Google  mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Google Search</h6>
+                                        <p>Links to Google Maps and Google Search for each business</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectHovercolor">
+                                            <option value="volvo" selected>View Logos</option>
+                                            <option value="saab">Hiden Logos</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="btn-save mt-3">
+                            <button type="submit" class="btn btn-color px-4">See More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
