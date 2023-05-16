@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>guest-search</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -14,53 +14,44 @@
 </head>
 <body >
   <div class="bodys">
-  <div class="navigation-wrap bg-light start-header start-style">
-        
-    <div class="row px-2">
-        <div class="col-12">
-            <nav class="navbar navbar-expand-md navbar-light">
-
-                <a class="navbar-brand" href="/" target="_blank"><img
-                        src="/img/website-logo.png"
-                        alt=""></a>
-
-               
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto py-4 py-md-0 flex">
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                <a class="nav-link" href="/home/index.html">Home</a>
-                        </li>
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="/choose-plan/index.html">view plans</a>
-                        </li>
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="/Guest-Searches/index.html">Guest Searches</a>
-                        </li>
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="/filter/index.html">Filter</a>
-                        </li>
-                        
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="/search/index.html">Bulk Search</a>
-                        </li>
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                            <a class="nav-link" href="#">Home</a>
-                    </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+      <a class="navbar-brand" href="#">company</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
-</div>
-</div>
+      <div class="collapse navBar navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/choose-plan/index.html">Plan</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/Guest-Searches/index.html">Guest Search</a>
+            </li>
+         
+          <li class="nav-item">
+            <a class="nav-link " href="/filter/index.html">Filter</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/search/index.html">Bulk Search</a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="/loginEmail.html"><button type="button" class="btn btn-outline-primary">Login</button>
+            </a></li>
+        <li class="nav-item "> <a class="nav-link" href="/Registration.html" target="_blank">
+                <button type="button" class="btn  btn-primary ">Sign up</button>
+            </a></li>
+        </ul>
+        
+      </div>
+      </div>
+    </nav>
     <div class="guest-search mt-5">
         <div class="container ">
-            <div class="table-row p-5 row">
+            <div class="table-row  row">
             <div class="pra  pb-3">
                 <h6>Search History</h6>
                 </div>
@@ -68,11 +59,11 @@
                 <thead class="table-head p-2">
                   <tr>
 
-                    <th scope="col" class="table-width col-md-2 ">
+                    <th scope="col" class="table-width col-md-2 col-lg-2 ">
                         WHAT</th>
-                    <th scope="col" class="table-width col-md-4 ">WHERE</th>
-                    <th scope="col" class="table-width col-md-2 ">WHEN</th>
-                    <th scope="col"class="table-width col-md-2 ">WHEN</th>
+                    <th scope="col" class="table-width col-md-5 col-lg-4">WHERE</th>
+                    <th scope="col" class="table-width col-md-2 col-lg-2 ">WHEN</th>
+                    <th scope="col"class="table-width col-md-3 col-lg-2">WHEN</th>
                   </tr>
                 </thead>
                 <tbody class="table-hovers ">
@@ -203,66 +194,74 @@
 
     </div>
 
-    <footer>
-        <div class="content">
-          <div class="top container">
-            <div class="logo-details">
-              <i class="fab fa-slack"></i>
-              <span class="logo_name">Get connected with us on social networks!</span>
-            </div>
-            <div class="media-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+    <footer class="section bg-footer mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class="">
+                      <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                      <ul class="list-unstyled footer-link mt-4">
+                          <li><a href="">Pages</a></li>
+                          <li><a href="">Our Team</a></li>
+                          <li><a href="">Feuchers</a></li>
+                          <li><a href="">Pricing</a></li>
+                      </ul>
+                  </div>
+              </div>
+  ​
+              <div class="col-lg-3">
+                  <div class="">
+                      <h6 class="footer-heading text-uppercase text-white">Ressources</h6>
+                      <ul class="list-unstyled footer-link mt-4">
+                          <li><a href="">Monitoring Grader </a></li>
+                          <li><a href="">Video Tutorial</a></li>
+                          <li><a href="">Term &amp; Service</a></li>
+                          <li><a href="">Zeeko API</a></li>
+                      </ul>
+                  </div>
+              </div>
+  ​
+              <div class="col-lg-2">
+                  <div class="">
+                      <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                      <ul class="list-unstyled footer-link mt-4">
+                          <li><a href="">Sign Up </a></li>
+                          <li><a href="">Login</a></li>
+                          <li><a href="">Terms of Services</a></li>
+                          <li><a href="">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+              </div>
+  ​
+              <div class="col-lg-4">
+                  <div class="">
+                      <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                      <p class="contact-info mt-4">Contact us if need help withanything</p>
+                      <p class="contact-info">+01 123-456-7890</p>
+                      <div class="mt-5">
+                          <ul class="list-inline">
+                              <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fab apple footer-social-icon fa-apple"></i></i></a></li>
+                          </ul>
+                         
+                      </div>
+                  </div>
+              </div>
+  ​
           </div>
-          <div class="link-boxes">
-            <ul class="box">
-              <li class="link_name">D7 LEAD FINDER</li>
-              <p>Find B2B Leads for your business in any industry across all countries. Receive hundreds of leads in just a few minutes, giving you the data you need to get more business.</p>
-              <!-- <li><a href="#">MPBSE</a></li>
-              <li><a href="#">BU,BHOPAL</a></li>
-              <li><a href="#">NCTE</a></li>
-              <li><a href="#">HIGER EDUCATION</a></li> -->
-            </ul>
-            <ul class="box">
-              <li class="link_name">DO MORE</li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#"> Youtube</a></li>
-            </ul>
-            <ul class="box">
-              <li class="link_name">USEFUL LINKS</li>
-              <li><a href="#">link1</a></li>
-              <li><a href="#">link2</a></li>
-              <li><a href="#">link3</a></li>
-              <li><a href="#">link4</a></li>
-            </ul>
-            <ul class="box">
-              <li class="link_name">INFORMATION</li>
-              <li><a href="#">LINK1</a></li>
-              <li><a href="#">link2</a></li>
-              <li><a href="#">link3</a></li>
-              <li><a href="#">link4</a></li>
-            </ul>
-            <!-- <div class="box input-box">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29521.08105176448!2d77.07347196664837!3d22.348525901370476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397d70da30805abf%3A0x1368c14a9092d58b!2sHarda%2C%20Madhya%20Pradesh%20461331!5e0!3m2!1sen!2sin!4v1670057032595!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
-          </div>
-        </div> 
-         <div class="bottom-details">
-          <div class="bottom_text">
-            <span class="copyright_text">Copyright @ 2023 <a href="#"></a>All rights reserved</span>
-            <span class="policy_terms">
-              <a href="#">Privacy policy</a>
-              <a href="#">Terms & condition</a>
-            </span>
-          </div>
-        </div>
-      </footer>
+      </div>
+  ​
+      <div class="text-center mt-5">
+          <p class="footer-alt mb-0 f-14">2023 © , All Rights Reserved</p>
+      </div>
+  </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+    <script src="script.js"></script>
     
 </body>
 </html>
